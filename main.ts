@@ -13,5 +13,13 @@ input.onButtonPressed(Button.B, function () {
 let Personne = 0
 Personne = 0
 basic.forever(function () {
-	
+    if (Personne == 10) {
+        basic.showLeds(`
+            # . . . #
+            . # . # .
+            . . # . .
+            . # . # .
+            # . . . #
+            `)
+    }
 })
